@@ -1,0 +1,5 @@
+<h1>Hi, <%= session[:name] %>.</h1>
+<%= form_tag("/show", method: 'get') do %>
+<%= hidden_field_tag(:name, params[:name]) %>
+<%= submit_tag("secret") %>
+<% end %>
